@@ -9,13 +9,6 @@ pipeline {
     skipStagesAfterUnstable()
   }
   stages {
-    
-    stage('Compile') {
-      steps {
-        // Compile the app and its dependencies
-        bat './gradlew wrapper --gradle-version=7.3.3'
-      }
-    }
 
     stage('Build') {
       steps {
